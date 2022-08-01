@@ -1,0 +1,290 @@
+import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(MaterialApp(home:TodoApp2()));
+// }
+
+class TodoApp2 extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          //crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.deepPurple,
+              child: Row(
+                children: [
+                  Container(
+                    //width: MediaQuery.of(context).size.width,
+                    padding: const EdgeInsets.all(25.0),
+                    decoration: new BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(30.0)
+                      ),
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+
+                      children: [
+                        Text("January".toUpperCase(),style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold)),
+                        SizedBox(height: 20),
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text("M",style: TextStyle(color: Colors.black,fontSize: 15)),
+                                SizedBox(height: 10),
+                                Text("1",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                            SizedBox(width: 35),
+                            Column(
+                              children: [
+                                Text("M",style: TextStyle(color: Colors.black,fontSize: 15)),
+                                SizedBox(height: 10),
+                                Text("1",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                            SizedBox(width: 35),
+                            Column(
+                              children: [
+                                Text("M",style: TextStyle(color: Colors.black,fontSize: 15)),
+                                SizedBox(height: 10),
+                                Text("1",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                            SizedBox(width: 35),
+                            Column(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text("M",style: TextStyle(color: Colors.black,fontSize: 15)),
+                                SizedBox(height: 10),
+                                Text("1",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                            SizedBox(width: 35),
+                            Column(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text("M",style: TextStyle(color: Colors.black,fontSize: 15)),
+                                SizedBox(height: 10),
+                                Text("1",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                            SizedBox(width: 35),
+                            Column(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text("M",style: TextStyle(color: Colors.black,fontSize: 15)),
+                                SizedBox(height: 10),
+                                Text("1",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                            SizedBox(width: 35),
+                            Column(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text("M",style: TextStyle(color: Colors.black,fontSize: 15)),
+                                SizedBox(height: 10),
+                                Text("1",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                            //SizedBox(width: 35),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              //width: MediaQuery.of(context).size.width,
+              height:  MediaQuery.of(context).size.height,
+              padding: const EdgeInsets.all(25.0),
+              decoration: new BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30.0),
+                  ),
+                  color: Colors.deepPurple
+              ),
+              child: Column(
+                children: [
+                  Stack(
+                    //alignment: AlignmentDirectional.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("JAN\n10",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                          SizedBox(width: 15),
+                          Container(
+                            padding: const EdgeInsets.all(12.0),
+                            width: 270,
+                            decoration: new BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20.0),
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0)
+                                ),
+                                color: Colors.deepPurple.shade100
+                            ),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text("10:30 - 11:30AM",style: TextStyle(color: Colors.deepPurple,fontSize: 15)),
+                                Text("Meeting With",style: TextStyle(color: Colors.deepPurple,fontSize: 15,fontWeight: FontWeight.bold)),
+                                Text("John Doe",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Stack(
+                    //alignment: AlignmentDirectional.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("JAN\n10",style: TextStyle(color: Colors.deepPurple,fontSize: 20,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                          SizedBox(width: 15),
+                          Container(
+                            padding: const EdgeInsets.all(12.0),
+                            width: 270,
+                            decoration: new BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20.0),
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0)
+                                ),
+                                color: Colors.deepPurple
+                            ),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text("10:30 - 11:30AM",style: TextStyle(color: Colors.white,fontSize: 15)),
+                                Text("Meeting With",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold)),
+                                Text("John Doe",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Stack(
+                    //alignment: AlignmentDirectional.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("JAN\n10",style: TextStyle(color: Colors.deepPurple,fontSize: 20,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                          SizedBox(width: 15),
+                          Container(
+                            padding: const EdgeInsets.all(12.0),
+                            width: 270,
+                            decoration: new BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20.0),
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0)
+                                ),
+                                color: Colors.deepPurple
+                            ),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text("10:30 - 11:30AM",style: TextStyle(color: Colors.white,fontSize: 15)),
+                                Text("Meeting With",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold)),
+                                Text("John Doe",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Stack(
+                    //alignment: AlignmentDirectional.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("JAN\n10",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                          SizedBox(width: 15),
+                          Container(
+                            padding: const EdgeInsets.all(12.0),
+                            width: 270,
+                            decoration: new BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20.0),
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0)
+                                ),
+                                color: Colors.deepPurple.shade100
+                            ),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text("10:30 - 11:30AM",style: TextStyle(color: Colors.deepPurple,fontSize: 15)),
+                                Text("Meeting With",style: TextStyle(color: Colors.deepPurple,fontSize: 15,fontWeight: FontWeight.bold)),
+                                Text("John Doe",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  Stack(
+                    //alignment: AlignmentDirectional.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("JAN\n10",style: TextStyle(color: Colors.deepPurple,fontSize: 20,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                          SizedBox(width: 15),
+                          Container(
+                            padding: const EdgeInsets.all(12.0),
+                            width: 270,
+                            decoration: new BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20.0),
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0)
+                                ),
+                                color: Colors.deepPurple
+                            ),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text("10:30 - 11:30AM",style: TextStyle(color: Colors.white,fontSize: 15)),
+                                Text("Meeting With",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold)),
+                                Text("John Doe",style: TextStyle(color: Colors.black,fontSize: 15))
+                              ],
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
